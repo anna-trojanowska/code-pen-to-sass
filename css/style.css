@@ -29,6 +29,10 @@ html {
   box-sizing: inherit;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .expand {
   float: right;
   display: inline;
@@ -40,10 +44,10 @@ html {
 h1 {
   font-size: 2.25em;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: sans-serif;
   font-weight: 900;
   margin: 0 20px;
-  color: #4a6830;
+  color: #FFFFFF;
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-bottom: 10px;
@@ -58,10 +62,10 @@ h2 {
 
 body, input, textarea {
   font-weight: 200;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: sans-serif;
   line-height: 1.54;
   font-size: 16px;
-  background: #80a143;
+  background: #608a3c;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -78,9 +82,9 @@ body, input, textarea {
   /*this style impacts the look of the heading containers. */
   cursor: pointer;
   padding: 10px;
-  background: #ffffff;
+  background: #80a143;
   position: relative;
-  color: #e4792e;
+  color: #FFFFFF;
   border-bottom: 1px solid #dedede;
   font-size: 1.5em;
   font-weight: 300;
@@ -93,7 +97,7 @@ body, input, textarea {
   content: "";
   width: 3px;
   height: 25px;
-  background: #9e1c39;
+  background: #FFFFFF;
   border-radius: 3px;
   position: absolute;
   right: 22px;
@@ -195,7 +199,7 @@ body, input, textarea {
 
 .sub-menu {
   /*this style is for the sub-menu box*/
-  color: #460b16;
+  color: #FFFFFF;
   border-bottom: 1px solid #dedede;
   font-size: 1em;
   display: none;
@@ -206,14 +210,14 @@ body, input, textarea {
 }
 
 .sub-menu li:hover {
-  background: #cccccc;
+  background: #4a6830;
   cursor: pointer;
 }
 
 .sub-menu li {
   /*this styles individual elements in a sub-menu*/
   padding: 10px;
-  background: #d7d7d7;
+  background: #608a3c;
   border-bottom: 1px solid #dedede;
 }
 

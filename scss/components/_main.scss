@@ -35,7 +35,7 @@ h1 {
   font-family: sans-serif;
   font-weight: 900;
   margin: 0 20px;
-  color: $dark-green;
+  color: $white;
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-bottom: 10px
@@ -49,11 +49,11 @@ h2 {
 }
 
 body, input, textarea {
-  font-weight: 200;
+    font-weight: 200;
 	font-family: sans-serif;
 	line-height: 1.54;
 	font-size: 16px;
-	background: $light-green;
+	background: $medium-green;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -66,19 +66,33 @@ body, input, textarea {
   margin-left: 20px;
 }
 
-.sidebar {
+.sidebar-menu {
   /*this style impacts the look of the heading containers. */
   cursor: pointer;
   padding: 10px;
-  background: #ffffff;
+  background: $light-green;
   position: relative;
-  color: $orange;
+  color:$white;
   border-bottom: 1px solid #dedede;
   font-size: 1.5em;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   letter-spacing: .5px;
   padding-right: 50px;
+  &:before, &:after {
+    content: "";
+    width: 3px;
+    height: 25px;
+    background: $white;
+    border-radius: 3px;
+    position: absolute;
+    right: 22px;
+    top: calc(28.7px - 12.5px);
+    transition: all .2s ease;
+  }
+  &:after {
+    transform: rotate(90deg);
+  }
 }
 
 .open:before {
@@ -122,7 +136,7 @@ body, input, textarea {
 
 .sub-menu {
   /*this style is for the sub-menu box*/
-  color: darken($red,30%);
+  color: $white;
   border-bottom: 1px solid #dedede;
   font-size: 1em;
   display: none;
@@ -132,14 +146,14 @@ body, input, textarea {
 }
 
 .sub-menu li:hover {
-  background: #cccccc;
+  background: $dark-green;
   cursor: pointer;
 }
 
 .sub-menu li {
   /*this styles individual elements in a sub-menu*/
   padding: 10px;
-  background: #d7d7d7;
+  background: $medium-green;
   border-bottom: 1px solid #dedede;
   &:last-child {
     border-bottom: 0;
