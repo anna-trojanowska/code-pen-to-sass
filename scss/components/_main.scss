@@ -66,7 +66,7 @@ body, input, textarea {
   margin-left: 20px;
 }
 
-.sidebar-menu {
+.sidebar {
   /*this style impacts the look of the heading containers. */
   cursor: pointer;
   padding: 10px;
@@ -79,20 +79,6 @@ body, input, textarea {
   text-rendering: optimizeLegibility;
   letter-spacing: .5px;
   padding-right: 50px;
-  &:before, &:after {
-    content: "";
-    width: 3px;
-    height: 25px;
-    background: $dark-red;
-    border-radius: 3px;
-    position: absolute;
-    right: 22px;
-    top: calc(28.7px - 12.5px);
-    transition: all .2s ease;
-  }
-  &:after {
-    transform: rotate(90deg);
-  }
 }
 
 .open:before {
