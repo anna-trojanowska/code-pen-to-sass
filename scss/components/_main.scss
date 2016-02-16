@@ -21,6 +21,10 @@ html {
     text-transform: uppercase;
 }
 
+.tab-left {
+    margin-left: 2em;
+}
+
 .expand {
   float: right; 
   display: inline; 
@@ -30,22 +34,22 @@ html {
 }
 
 h1 {
-  font-size: 2.25em;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-weight: 900;
-  margin: 0 20px;
-  color: $white;
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-bottom: 10px
+   font-size: 2.25em;
+   text-transform: uppercase;
+   font-family: sans-serif;
+   font-weight: 900;
+   margin: 0 20px;
+   color: $white;
+   text-rendering: optimizeLegibility;
+   line-height: 1;
+   margin-bottom: 10px
 }
 
 h2 {
-  font-size: 36px;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  letter-spacing: .5px;
+    font-size: 36px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .5px;
 }
 
 body, input, textarea {
@@ -59,52 +63,55 @@ body, input, textarea {
 
 .sidebar-1 {
   /* these are the styles for the container around the menu */
-  text-align: right;
+  text-align: left;
   padding: 0px;
   display:inline-block;
   box-shadow: 0 0px 1px 0 rgba(0,0,0,.2);
-  margin-left: 20px;
 }
 
 .sidebar-menu {
   /*this style impacts the look of the heading containers. */
-  cursor: pointer;
-  padding: 10px;
-  background: $light-green;
-  position: relative;
-  color:$white;
-  border-bottom: 1px solid #dedede;
-  font-size: 1.5em;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  letter-spacing: .5px;
-  padding-right: 50px;
-  &:before, &:after {
-    content: "";
-    width: 3px;
-    height: 25px;
-    background: $white;
-    border-radius: 3px;
-    position: absolute;
-    right: 22px;
-    top: calc(28.7px - 12.5px);
-    transition: all .2s ease;
-  }
-  &:after {
-    transform: rotate(90deg);
-  }
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    background: $light-green;
+    position: relative;
+    color:$white;
+    border-bottom: 1px solid #dedede;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .5px;
+    padding-right: 50px;
+    &:first-child {
+        border-top: 1px solid #dedede;
+    }
+        &:before, &:after {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background: $white;
+            border-radius: 3px;
+            position: absolute;
+            right: 22px;
+            top: calc(28.7px - 12.5px);
+            transition: all .2s ease;
+        }
+        &:after {
+            transform: rotate(90deg);
+        }
 }
 
 .open:before {
-  animation: turn-plus;
-  animation-duration: .3s;
-  animation-fill-mode: forwards;
+    animation: turn-plus;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 
 .open:after {
-  animation: turn-crossbar;
-  animation-duration: .3s;
-  animation-fill-mode: forwards;
+    animation: turn-crossbar;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes turn-plus {
@@ -132,12 +139,11 @@ body, input, textarea {
   }
 }
 
-.sidebar-menu:hover {background: darken(#FFFFFF, 5%);}
+.sidebar-menu:hover {background: darken($medium-green, 5%);}
 
 .sub-menu {
   /*this style is for the sub-menu box*/
   color: $white;
-  border-bottom: 1px solid #dedede;
   font-size: 1em;
   display: none;
   &:last-child {
@@ -154,7 +160,6 @@ body, input, textarea {
   /*this styles individual elements in a sub-menu*/
   padding: 10px;
   background: $medium-green;
-  border-bottom: 1px solid #dedede;
   &:last-child {
     border-bottom: 0;
   }

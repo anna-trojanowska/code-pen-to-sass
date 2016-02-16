@@ -33,6 +33,10 @@ html {
   text-transform: uppercase;
 }
 
+.tab-left {
+  margin-left: 2em;
+}
+
 .expand {
   float: right;
   display: inline;
@@ -71,16 +75,16 @@ body, input, textarea {
 
 .sidebar-1 {
   /* these are the styles for the container around the menu */
-  text-align: right;
+  text-align: left;
   padding: 0px;
   display: inline-block;
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
 }
 
 .sidebar-menu {
   /*this style impacts the look of the heading containers. */
   cursor: pointer;
+  text-transform: uppercase;
   padding: 10px;
   background: #80a143;
   position: relative;
@@ -91,6 +95,10 @@ body, input, textarea {
   text-rendering: optimizeLegibility;
   letter-spacing: .5px;
   padding-right: 50px;
+}
+
+.sidebar-menu:first-child {
+  border-top: 1px solid #dedede;
 }
 
 .sidebar-menu:before, .sidebar-menu:after {
@@ -194,13 +202,12 @@ body, input, textarea {
 }
 
 .sidebar-menu:hover {
-  background: #f2f2f2;
+  background: #547834;
 }
 
 .sub-menu {
   /*this style is for the sub-menu box*/
   color: #FFFFFF;
-  border-bottom: 1px solid #dedede;
   font-size: 1em;
   display: none;
 }
@@ -218,7 +225,6 @@ body, input, textarea {
   /*this styles individual elements in a sub-menu*/
   padding: 10px;
   background: #608a3c;
-  border-bottom: 1px solid #dedede;
 }
 
 .sub-menu li:last-child {
